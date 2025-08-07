@@ -9,6 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Hairline&display=swap" rel="stylesheet">
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+</style>
+
 <body>
     <form action="" method="post">
         <Center>
@@ -16,63 +20,64 @@
         <h2>Venha fazer parte deste evento!</h2>
         <Br><br>
         </Center>
+        <h3>Verificar depois:</h4>
+        <h3>Data e prazo de inscrição;</h3>
+        <h3>Quant. membros por equipe;</h3>
+        <h3>aapm pagamento;</h3>
         <label for="nome">Nome do participante:</label>
         <input type="text" name="" id="nome_participante" required autofocus><br>
-        <label for="nome">Turma do participante:</label>
+        <label for="nome">Curso e turma do participante:</label>
         <input type="text" name="" id="turma_participante" required autofocus><br>
         <label for="email">Email de contato:</label>
         <input type="email" name="email" id="email" required placeholder="Exemplo: email@email.com"><br>
-        
+        <label for="email">Telefone de contato:</label>
+        <input type="number" name="telefone" id="telefone" required placeholder="Exemplo: (15)12345-6789">
 
-        <label>Categoria:</label>
+        <label>Modalidade:</label><br>
+        <input class="emlinha" type="checkbox" name="time" id="volei">
+        <label class="emlinha" for="volei">Vôlei</label>
+        <input class="emlinha" type="checkbox" name="time" id="futebol">
+        <label class="emlinha" for="futebol">Futebol</label>
+        <input class="emlinha" type="checkbox" name="time" id="tenis mesa">
+        <label class="emlinha" for="tenis mesa">Tenis de mesa</label>
+        <br>
+
+        <br>
+        <label>Você possui time?</label><br>
+        <input class="emlinha" type="radio" name="time" id="sim">
+        <label class="emlinha" for="sim">Sim</label>
+        <input class="emlinha" type="radio" name="time" id="nao">
+        <label class="emlinha" for="nao">Não</label>
+        <br>
+
+        <br>
+        <label for="nome">Nome do time:</label>
+        <input type="text" name="" id="nome_time" required autofocus><br>
+
+        <br>
+        <label>Quantidade de membros:</label>
         <select name="objetivo">
             <option value="">Selecione</option>
-            <option value="Bolos e tortas">Bolos e tortas</option>
-            <option value="Carnes">Carnes</option>
-            <option value="Saladas">Saladas e molhos</option>
-            <option value="Massas">Massas</option>
-            <option value="Bebidas">Bebidas</option>
-            <option value="Doces">Doces e sobremesas</option>
+            <option value="dois">2</option>
+            <option value="tres">3</option>
+            <option value="quatro">4</option>
         </select>
         <br>
 
-        <label>Ingredientes:</label>
-        <textarea name="informações" rows="8" cols="54" maxlength="700"></textarea>
+        <label>Pagou a AAPM?</label><br>
+        <input class="emlinha" type="radio" name="time" id="sim">
+        <label class="emlinha" for="sim">Sim</label>
+        <input class="emlinha" type="radio" name="time" id="nao">
+        <label class="emlinha" for="nao">Não</label>
         <br>
 
-        <label>Modo de preparo:</label>
-        <textarea name="informações" rows="8" cols="54" maxlength="700"></textarea>
         <br>
-
-        <label for="data">Tempo de preparo:</label>
-        <input type="time" name="dt/nasc" id="tempo"><br>
-
-        <label>Dificuldade:</label><br>
-        <input class="emlinha" type="radio" name="dificuldade" id="dificil">
-        <label class="emlinha" for="dificil">Difícil</label>
-        <input class="emlinha" type="radio" name="dificuldade" id="medio">
-        <label class="emlinha" for="medio">Intemediário</label>
-        <input class="emlinha" type="radio" name="dificuldade" id="facil">
-        <label class="emlinha" for="facil">Fácil</label><br><Br>
-
-        <label for="foto">Foto:</label>
-        <input type="file" name="arquivo" id="foto"><br>
-
-        <label for="nome">Seu nome:</label>
-        <input type="text" name="" id="nome" required autofocus><br>
-
-        <label for="email">Email de contato:</label>
-        <input type="email" name="email" id="email" required placeholder="Exemplo: email@email.com"><br>
-
         <label>Comentários adicionais:</label>
-        <textarea name="informações" rows="8" cols="54" maxlength="700"></textarea>
+        <textarea name="informações" rows="8" cols="54" maxlength="200"></textarea>
         <br>
 
         <input type="submit" name="enviar" value="ENVIAR" id="enviar">
-        <input type="reset" name="resetar" id="resetar">
+        <input type="reset" name="resetar" value="REDEFINIR" id="resetar">
     </form>
-    <center>
-    <h6>Imagem: Vecteezy </h6>
-    </center>
 </body>
 </html>

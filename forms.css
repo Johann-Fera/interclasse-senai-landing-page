@@ -3,8 +3,8 @@ h1, h2, h6, label, input, select, textarea{
     width: 95%;
     padding: 10px;
     margin-bottom: 20px;
-    font-family: "Bungee", sans-serif;
-    color: #f25829
+   font-family: "Inter", sans-serif;
+    color: #FFFFFF
 }
 .emlinha{
     display: inline;
@@ -13,9 +13,11 @@ h1, h2, h6, label, input, select, textarea{
 form{
     width: 550px;
     margin: auto;
-    background: #ffebd9;
+    background: #3CAEA3;
     padding: 40px;
     border-radius: 10px;
+    border: solid, 15px;
+    border-color: #20639B;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
 }
@@ -35,53 +37,48 @@ input[type="checkbox"], input[type="radio"]{
 }
 input, select, textarea{
     border-radius: 5px;
-    border: solid 1px #f25829;
+    border: solid 1px #568DBA;
 }
 input:focus, select:focus, textarea:focus{
     outline: none;
-    border: solid 1px #ffb300;
+    border: solid 1px #20639B;
 }
 #enviar{
     width:  100%;
-    border: 2px solid #ffb300;
+    border: 2px solid #20639B;
     background-color: #fff;
-    color: #ffb300;
+    color: #FFFFFF;
     cursor: pointer;
     font-size: 17px;
     letter-spacing: 0.03cm;
 }
 #enviar:hover{
-    background-color: #ffb300;
+    background-color: #20639B;
     color: #fff;
     transition: all linear 0.3s;
 }
 #enviar:not(hover){
     background-color: #e400;
-    color: #ffb300;
+    color: #20639B;
     transition: all linear 0.3s;
 }
 #resetar{
     width:  100%;
-    border: 2px solid #fff;
-    background-color: #ffb300;
+    border: 2px solid #20639B;
+    background-color: #20639B;
     color: #fff;
     cursor: pointer;
     font-size: 17px;
     letter-spacing: 0.03cm;
 }
 #resetar:hover{
-    background-color: #e400;
-    color:#f25829;
+     background-color: #20639B;
+    color: #3CAEA3;
     transition: all linear 0.3s;
 }
 #resetar:not(hover){
-    background-color: #f25829;
+    background-color: #568DBA;
     color: #fff;
     transition: all linear 0.3s;
 }
-body{
-    background-color: #fff;
-    background-image: url("fundo.jpg");
-    background-size: 750px;
-    background-repeat: repeat-x;
-}
+

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="forms.css">
     <style>
         html{
             font-family: 'inter', sans-serif;
@@ -47,7 +48,7 @@
             justify-content: center;
             padding: 2vh;
         }
-
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
     </style>
 </head>
 <header>
@@ -77,7 +78,73 @@
     <p>Taxa de R$25.00 para não associados à AAPM, por modalidade.</p>
     <p>Sem taxa para associados!</p>
     <p>Se interessou? Inscreva-se já!</p>
-    <button>INSCRIÇÃO</button>
+
+    <form action="" method="post">
+        <Center>
+        <h1>INSCRIÇÃO INTERCLASSES 2025</h1>
+        <h2>Venha fazer parte deste evento!</h2>
+        <Br><br>
+        </Center>
+        <h3>Verificar depois:</h4>
+        <h3>Data e prazo de inscrição;</h3>
+        <h3>Quant. membros por equipe;</h3>
+        <h3>aapm pagamento;</h3>
+        <label for="nome">Nome do participante:</label>
+        <input type="text" name="" id="nome_participante" required autofocus><br>
+        <label for="nome">Curso e turma do participante:</label>
+        <input type="text" name="" id="turma_participante" required autofocus><br>
+        <label for="email">Email de contato:</label>
+        <input type="email" name="email" id="email" required placeholder="Exemplo: email@email.com"><br>
+        <label for="email">Telefone de contato:</label>
+        <input type="number" name="telefone" id="telefone" required placeholder="Exemplo: (15)12345-6789">
+
+        <label>Modalidade:</label><br>
+        <input class="emlinha" type="checkbox" name="time" id="volei">
+        <label class="emlinha" for="volei">Vôlei</label>
+        <input class="emlinha" type="checkbox" name="time" id="futebol">
+        <label class="emlinha" for="futebol">Futebol</label>
+        <input class="emlinha" type="checkbox" name="time" id="tenis mesa">
+        <label class="emlinha" for="tenis mesa">Tenis de mesa</label>
+        <br>
+
+        <br>
+        <label>Você possui time?</label><br>
+        <input class="emlinha" type="radio" name="time" id="sim">
+        <label class="emlinha" for="sim">Sim</label>
+        <input class="emlinha" type="radio" name="time" id="nao">
+        <label class="emlinha" for="nao">Não</label>
+        <br>
+
+        <br>
+        <label for="nome">Nome do time:</label>
+        <input type="text" name="" id="nome_time" required autofocus><br>
+
+        <br>
+        <label>Quantidade de membros:</label>
+        <select name="objetivo">
+            <option value="">Selecione</option>
+            <option value="dois">2</option>
+            <option value="tres">3</option>
+            <option value="quatro">4</option>
+        </select>
+        <br>
+
+        <label>Pagou a AAPM?</label><br>
+        <input class="emlinha" type="radio" name="time" id="sim">
+        <label class="emlinha" for="sim">Sim</label>
+        <input class="emlinha" type="radio" name="time" id="nao">
+        <label class="emlinha" for="nao">Não</label>
+        <br>
+
+        <br>
+        <label>Comentários adicionais:</label>
+        <textarea name="informações" rows="8" cols="54" maxlength="200"></textarea>
+        <br>
+
+        <input type="submit" name="enviar" value="ENVIAR" id="enviar">
+        <input type="reset" name="resetar" value="REDEFINIR" id="resetar">
+    </form>
+
     <div>
         <div>
             <p>AAPM</p>
