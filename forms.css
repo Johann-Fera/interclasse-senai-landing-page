@@ -1,4 +1,4 @@
-h1, h2, h6, label, input, select, textarea{
+form > h1, form > h2, form > h6, label, input, select, textarea{
     display:block;
     width: 95%;
     padding: 10px;
