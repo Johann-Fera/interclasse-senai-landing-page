@@ -16,6 +16,8 @@ form{
     background: #3CAEA3;
     padding: 40px;
     border-radius: 10px;
+    border: solid, 15px;
+    border-color: #20639B;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
 }
@@ -71,7 +73,7 @@ input:focus, select:focus, textarea:focus{
 }
 #resetar:hover{
      background-color: #20639B;
-    color:#568DBA;
+    color: #3CAEA3;
     transition: all linear 0.3s;
 }
 #resetar:not(hover){
@@ -79,9 +81,4 @@ input:focus, select:focus, textarea:focus{
     color: #fff;
     transition: all linear 0.3s;
 }
-body{
-    background-color: #fff;
-    background-image: url("fundo.jpg");
-    background-size: 750px;
-    background-repeat: repeat-x;
-}
+
