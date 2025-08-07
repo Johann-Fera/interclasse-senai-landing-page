@@ -1,20 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        html{
+            font-family: 'inter', sans-serif;
+        }
+        header{
+            display: inline-flex;
+            background-color: #568DBA;
+        }
+        .ancoras{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            align-content: center;
+            color: white;
+        }
+        .sem_borda{
+            border-left: none;
+        }
+        .com_borda{
+            border-left: solid 2px white;
+        }
+        body{
+            margin: 0;
+        }
 
     </style>
 </head>
 <header>
     <img src="imagens/aapm logo.png" alt="logo AAPM">
     <img src="imagens/sesi logo.png" alt="logo SESI">
-    <h3>Sobre</h3>
-    <h3>Modalidades</h3>
-    <h3>Inscrição</h3>
-    <h3>AAPM</h3>
+    <div class="ancoras">
+        <h3 class="sem_borda">Sobre</h3>
+        <h3 class="com_borda">Modalidades</h3>
+        <h3 class="com_borda">Inscrição</h3>
+        <h3 class="com_borda">AAPM</h3>
+    </div>
 </header>
 <body>
     <p>05/08 - 06/08</p>
