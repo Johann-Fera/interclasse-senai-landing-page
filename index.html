@@ -6,6 +6,27 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="forms.css">
     <style>
+        h1{
+            height: 10vh;
+            font-weight: bold;
+            color: #ED553B;
+        }
+        h2{
+            height: 8vh;
+            color: #ED553B;
+        }
+        h3{
+            height: 3vh;
+        }
+        h4{
+            height: 3vh;
+        }
+        h5{
+            height: 2vh;
+        }
+        h6{
+            height: 3vh;
+        }
         html{
             font-family: 'inter', sans-serif;
         }
@@ -37,7 +58,7 @@
             background-repeat: no-repeat;
             padding: 1vh;
         }
-        .inicio > p{
+        .inicio > h5{
             justify-self: center;
             margin: 0;
         }
@@ -68,10 +89,6 @@
             justify-self: center;
             padding: 2vh;
         }
-        .grid_moda{
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-        }
         @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
     </style>
     <link rel="stylesheet" type="text/css" href="forms.css">
@@ -87,8 +104,16 @@
     </div>
 </header>
 <body>
+
+    <!--- <h6>sobre/modalidades/etc / descrição esportes - semi-bold, 32</h6>
+    <h5>05/06 - extra-bold, 24</h5>
+    <h1>interclasse - extra-bold, 64</h1>
+    <h2>senai / modalidades - semi-bold, 48</h2>
+    <h3>texto normal / footer - medium, 32</h3>
+    <h4>Taxa / aapm - extra-bold, 40</h4> ---> 
+
     <div class="inicio">
-        <p>05/08 - 06/08</p>
+        <h5>05/08 - 06/08</h5>
         <div class="inicio_titulo">
             <h1>INTERCLASSES SENAI 2025</h1>
             <h2>SENAI Gaspar Ricardo Júnior</h2>
@@ -96,15 +121,13 @@
         <h3>A época de esportes chegou para te divertir e te desafiar! Participe!</h3>
     </div>
     <h2 class="modalidades">MODALIDADES</h2>
-    <div class="grid_moda">
-        <img src="imagens/futs.png" alt="bola futebol no gol">
-        <img src="imagens/jogadoras volei.png" alt="jogo de volei">
-        <img src="imagens/pingpong.png" alt="raquetes e bolinhas na mesa de ping-pong">
-    </div>
-    <p>Jogue partidas de vôlei e desenvolva suas habilidades socioemocionais junto de outros jogadores!</p>
-    <p>Taxa de R$25.00 para não associados à AAPM, por modalidade.</p>
-    <p>Sem taxa para associados!</p>
-    <p>Se interessou? Inscreva-se já!</p>
+    <img src="imagens/futs.png" alt="bola futebol no gol">
+    <img src="imagens/jogadoras volei.png" alt="jogo de volei">
+    <img src="imagens/pingpong.png" alt="raquetes e bolinhas na mesa de ping-pong">
+    <h3>Jogue partidas de vôlei e desenvolva suas habilidades socioemocionais junto de outros jogadores!</h3>
+    <h4>Taxa de R$25.00 para não associados à AAPM, por modalidade.</h4>
+    <h4>Sem taxa para associados!</h4>
+    <h4>Se interessou? Inscreva-se já!</h4>
 
     <form action="" method="post">
         <Center>
@@ -112,7 +135,7 @@
         <h2>Venha fazer parte deste evento!</h2>
         <Br><br>
         </Center>
-        <h3>Verificar depois:</h4>
+        <h3>Verificar depois:</h3>
         <h3>Data e prazo de inscrição;</h3>
         <h3>Quant. membros por equipe;</h3>
         <h3>aapm pagamento;</h3>
@@ -174,11 +197,11 @@
 
     <div>
         <div>
-            <p>AAPM</p>
-            <p>Confira as vantagens do patrocínio da organização à escola.</p>
-            <p>Junte-se à AAPM e desfrute dos seus benefícios!</p>
+            <h4>AAPM</h4>
+            <h3>Confira as vantagens do patrocínio da organização à escola.</h3>
+            <h3>Junte-se à AAPM e desfrute dos seus benefícios!</h3>
             <button>Ver benefícios</button>
-            <p>Acesso ao Wi-fi e video-games; Passeios culturais bimestrais; Sorteios e brindes; Descontos na cantina; E mais!</p>
+            <h3>Acesso ao Wi-fi e video-games; Passeios culturais bimestrais; Sorteios e brindes; Descontos na cantina; E mais!</h3>
         </div>
         <div>
             <img src="imagens/pingspongs.jpg" alt="foto de beneficio">
@@ -186,27 +209,27 @@
             <img src="imagens/botao ns.png" alt="botão não selecionado">
             <img src="imagens/botao ns.png" alt="botão não selecionado">
             <img src="imagens/botao ns.png" alt="botão não selecionado">
-            <p>Descontrair com uma partida de ping-pong!</p>
+            <h3>Descontrair com uma partida de ping-pong!</h3>
         </div>
     </div>
-    <p>Voltar ao topo</p>
+    <h3>Voltar ao topo</h3>
 </body>
 <footer>
     <div>
         <img src="imagens/git icone.png" alt="github logo">
-        <p>Johann Andrade</p>
+        <h3>Johann Andrade</h3>
         <img src="imagens/git icone.png" alt="github logo">
-        <p>Nicolle Rocha</p>
+        <h3>Nicolle Rocha</h3>
     </div>
     <div>
-        <p>Praça Roberto Mange, R. Santa Rosália, 30, Sorocaba - SP, 18090-110</p>
-        <p>(15) 3212-7400</p>
+        <h3>Praça Roberto Mange, R. Santa Rosália, 30, Sorocaba - SP, 18090-110</h3>
+        <h3>(15) 3212-7400</h3>
     </div>
     <div>
         <img src="imagens/insta icone.png" alt="instagram logo">
-        <p>SENAI sorocaba</p>
+        <h3>SENAI sorocaba</h3>
         <img src="imagens/face icone.png" alt="facebook logo">
-        <p>Senai Sorocaba - Santa Rosália</p>
+        <h3>Senai Sorocaba - Santa Rosália</h3>
     </div>
 </footer>
 </html>
