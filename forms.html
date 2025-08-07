@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="forms.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Hairline&display=swap" rel="stylesheet">
+<body>
+    <form action="" method="post">
+        <Center>
+        <h1>INSCRIÇÃO INTERCLASSES 2025</h1>
+        <h2>Venha fazer parte deste evento!</h2>
+        <Br><br>
+        </Center>
+        <label for="nome">Nome do participante:</label>
+        <input type="text" name="" id="nome_participante" required autofocus><br>
+        <label for="nome">Turma do participante:</label>
+        <input type="text" name="" id="turma_participante" required autofocus><br>
+        <label for="email">Email de contato:</label>
+        <input type="email" name="email" id="email" required placeholder="Exemplo: email@email.com"><br>
+        
+
+        <label>Categoria:</label>
+        <select name="objetivo">
+            <option value="">Selecione</option>
+            <option value="Bolos e tortas">Bolos e tortas</option>
+            <option value="Carnes">Carnes</option>
+            <option value="Saladas">Saladas e molhos</option>
+            <option value="Massas">Massas</option>
+            <option value="Bebidas">Bebidas</option>
+            <option value="Doces">Doces e sobremesas</option>
+        </select>
+        <br>
+
+        <label>Ingredientes:</label>
+        <textarea name="informações" rows="8" cols="54" maxlength="700"></textarea>
+        <br>
+
+        <label>Modo de preparo:</label>
+        <textarea name="informações" rows="8" cols="54" maxlength="700"></textarea>
+        <br>
+
+        <label for="data">Tempo de preparo:</label>
+        <input type="time" name="dt/nasc" id="tempo"><br>
+
+        <label>Dificuldade:</label><br>
+        <input class="emlinha" type="radio" name="dificuldade" id="dificil">
+        <label class="emlinha" for="dificil">Difícil</label>
+        <input class="emlinha" type="radio" name="dificuldade" id="medio">
+        <label class="emlinha" for="medio">Intemediário</label>
+        <input class="emlinha" type="radio" name="dificuldade" id="facil">
+        <label class="emlinha" for="facil">Fácil</label><br><Br>
+
+        <label for="foto">Foto:</label>
+        <input type="file" name="arquivo" id="foto"><br>
+
+        <label for="nome">Seu nome:</label>
+        <input type="text" name="" id="nome" required autofocus><br>
+
+        <label for="email">Email de contato:</label>
+        <input type="email" name="email" id="email" required placeholder="Exemplo: email@email.com"><br>
+
+        <label>Comentários adicionais:</label>
+        <textarea name="informações" rows="8" cols="54" maxlength="700"></textarea>
+        <br>
+
+        <input type="submit" name="enviar" value="ENVIAR" id="enviar">
+        <input type="reset" name="resetar" id="resetar">
+    </form>
+    <center>
+    <h6>Imagem: Vecteezy </h6>
+    </center>
+</body>
+</html>
