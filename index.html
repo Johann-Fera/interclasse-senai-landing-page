@@ -102,6 +102,7 @@
         .grid_moda{
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
+            height: 50vh;
         }
         .taxa{
             display: grid;
@@ -116,12 +117,33 @@
         .grid-aapm{
             display: grid;
             grid-template-columns: 1fr 1fr;
+            background-color: #FFFFFF70;
+            border-radius: 22px;
+            padding: 3vh;
+            padding-top: 1vh;
+            grid-gap: 3vh;
         }
         .SMOL{
-            height: 40vh;
+            background-image: url(imagens/pingspongs.jpg);
+            height: 50%;
         }
         .logo-fotos{
             height: 10vh
+        }
+        .info-aapm{
+            background-color: #F6D55C;
+            border-bottom-left-radius: 22px;
+            border-bottom-right-radius: 22px;
+            border-top-left-radius: 44px;
+            border-top-right-radius: 44px;
+            padding: 3vh;
+        }
+        .info-aapm > h4{
+            color: #ED553B;
+            justify-self: center
+        }
+        .info-aapm > h3{
+            color: #173F5F;
         }
         @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
     </style>
@@ -156,9 +178,9 @@
     </div>
     <h2 class="modalidades">MODALIDADES</h2>
     <div class="grid_moda">
-        <img src="imagens/futs.png" alt="bola futebol no gol">
-        <img src="imagens/jogadoras volei.png" alt="jogo de volei">
-        <img src="imagens/pingpong.png" alt="raquetes e bolinhas na mesa de ping-pong">
+        <img src="imagens/futs.png" alt="bola futebol no gol" style="width: 100%">
+        <img src="imagens/jogadoras volei.png" alt="jogo de volei" style="width: 100%">
+        <img src="imagens/pingpong.png" alt="raquetes e bolinhas na mesa de ping-pong" style="width: 100%">
     </div>
     <h3 class="modalidades">Jogue partidas de vôlei e desenvolva suas habilidades socioemocionais junto de outros jogadores!</h3>
     <div class="taxa">
@@ -232,15 +254,15 @@
         <input type="reset" name="resetar" value="REDEFINIR" id="resetar">
     </form>
     <div class="grid-aapm">
-        <div>
+        <div class="info-aapm">
             <h4>AAPM</h4>
             <h3>Confira as vantagens do patrocínio da organização à escola.</h3>
             <h3>Junte-se à AAPM e desfrute dos seus benefícios!</h3>
-            <button>Ver benefícios</button>
+            <h4>Ver benefícios</h4>
             <!---<h3>Acesso ao Wi-fi e video-games; Passeios culturais bimestrais; Sorteios e brindes; Descontos na cantina; E mais!</h3> --->
         </div>
-        <div>
-            <img class="SMOL" src="imagens/pingspongs.jpg" alt="foto de beneficio">
+        <div class="beneficios">
+            <img src="imagens/pingspongs.jpg" alt="foto de beneficio" style="width: 100%;">
             <img src="imagens/botao selecionado.png" alt="botão selecionado">
             <img src="imagens/botao ns.png" alt="botão não selecionado">
             <img src="imagens/botao ns.png" alt="botão não selecionado">
