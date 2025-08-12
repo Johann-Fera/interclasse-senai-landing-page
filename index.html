@@ -185,13 +185,6 @@
             align-content: end;
             flex-wrap: wrap;
         }
-        .beneficios-botao-selecionado{
-            width: 5%;
-            aspect-ratio: 1/1;  
-            background-image: url(imagens/botao\ selecionado.png);
-            background-repeat: no-repeat;
-            background-position: center;
-        }
         .beneficios-botao{
             width: 5%;
             aspect-ratio: 1/1; 
@@ -210,7 +203,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
     </style>
 </head>
-<!--- <h6>sobre/modalidades/etc / descrição esportes - semi-bold, 32</h6>
+<!---
     <h5>05/06 - extra-bold, 24</h5>
     <h1>interclasse - extra-bold, 64</h1>
     <h2>senai / modalidades - semi-bold, 48</h2>
@@ -324,15 +317,15 @@
             </div>
             <div class="beneficios">
                 <div class="beneficios-img" id="foto-beneficio">
-                    <div class="beneficios-botao-selecionado" onclick="troca_beneficio(1)" id="bt1"></div>
+                    <div class="beneficios-botao" onclick="troca_beneficio(1)" id="bt1"></div>
                     <div class="beneficios-botao" onclick="troca_beneficio(2)" id="bt2"></div>
                     <div class="beneficios-botao" onclick="troca_beneficio(3)" id="bt3"></div>
                     <div class="beneficios-botao" onclick="troca_beneficio(4)" id="bt4"></div>
                 </div>
-                <h5>Descontrair com uma partida de ping-pong!</h5>
+                <h5 id="descricao-beneficio">Descontrair com uma partida de ping-pong!</h5>
             </div>
         </div>
-        <h7>Voltar ao topo</h7>
+        <h5>Voltar ao topo</h5>
     </main>
     <footer>
         <div class="github">
@@ -354,16 +347,36 @@
     </footer>
 </body>
 <script>
+    document.getElementById("bt1").style.backgroundImage = "url('imagens/botao\ selecionado.png')";
     function troca_beneficio(bol) {
         if (bol == 1) {
-            document.getElementById("bt1").style.backgroundImage = "url"
-            
+            document.getElementById("foto-beneficio").style.backgroundImage = "url('imagens/pingspongs.jpg')";
+            document.getElementById("descricao-beneficio").innerHTML = "Descontrair com uma partida de ping-pong!";
+            document.getElementById("bt1").style.backgroundImage = "url('imagens/botao\ selecionado.png')";
+            document.getElementById("bt2").style.backgroundImage = "url('imagens/botao\ ns.png')";
+            document.getElementById("bt3").style.backgroundImage = "url('imagens/botao\ ns.png')";
+            document.getElementById("bt4").style.backgroundImage = "url('imagens/botao\ ns.png')";
         } else if (bol == 2) {
-            
-        } else if (condition) {
-            
+            document.getElementById("foto-beneficio").style.backgroundImage = "url('imagens/pia.jpg')";
+            document.getElementById("descricao-beneficio").innerHTML = "Utilize a nova pia instalada no refeitório!";
+            document.getElementById("bt2").style.backgroundImage = "url('imagens/botao\ selecionado.png')";
+            document.getElementById("bt1").style.backgroundImage = "url('imagens/botao\ ns.png')";
+            document.getElementById("bt3").style.backgroundImage = "url('imagens/botao\ ns.png')";
+            document.getElementById("bt4").style.backgroundImage = "url('imagens/botao\ ns.png')";
+        } else if (bol == 3) {
+            document.getElementById("foto-beneficio").style.backgroundImage = "url('imagens/espaço\ aapm.jpg')";
+            document.getElementById("descricao-beneficio").innerHTML = "Área perfeita para guardar e esquentar seus alimentos!";
+            document.getElementById("bt3").style.backgroundImage = "url('imagens/botao\ selecionado.png')";
+            document.getElementById("bt1").style.backgroundImage = "url('imagens/botao\ ns.png')";
+            document.getElementById("bt2").style.backgroundImage = "url('imagens/botao\ ns.png')";
+            document.getElementById("bt4").style.backgroundImage = "url('imagens/botao\ ns.png')";
         } else {
-            
+            document.getElementById("foto-beneficio").style.backgroundImage = "url('imagens/gamer.jpg')";
+            document.getElementById("descricao-beneficio").innerHTML = "Relaxe a mente jogando games!";
+            document.getElementById("bt4").style.backgroundImage = "url('imagens/botao\ selecionado.png')";
+            document.getElementById("bt1").style.backgroundImage = "url('imagens/botao\ ns.png')";
+            document.getElementById("bt2").style.backgroundImage = "url('imagens/botao\ ns.png')";
+            document.getElementById("bt3").style.backgroundImage = "url('imagens/botao\ ns.png')";
         }
         
     }
