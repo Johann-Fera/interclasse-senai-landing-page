@@ -40,11 +40,16 @@
             font-family: 'inter', sans-serif;
         }
         header{
-            display: inline-flex;
+            display: grid;
             width: 100%;
             background-color: #568DBA;
             position: sticky;
             top: 0;
+            grid-template-columns: min-content min-content auto;
+        }
+        .flex{
+            display: flex;
+            justify-content: flex-end;
         }
         .ancoras{
             display: grid;
@@ -54,6 +59,9 @@
             justify-content: center;
             justify-items: center;
             justify-self: left;
+        }
+        .sem_borda{
+            padding: 10%;
         }
         .com_borda{
             padding-left: 20%;
@@ -214,11 +222,13 @@
     <header>
         <img src="imagens/aapm logo.png" alt="logo AAPM" class="logo-fotos">
         <img src="imagens/sesi logo.png" alt="logo SESI" class="logo-fotos">
-        <div class="ancoras">
-            <h3 class="sem_borda">início</h3>
-            <h3 class="com_borda">Modalidades</h3>
-            <h3 class="com_borda">Inscrição</h3>
-            <h3 class="com_borda">AAPM</h3>
+        <div class="flex">
+            <div class="ancoras">
+                <h3 class="sem_borda">início</h3>
+                <h3 class="com_borda">Modalidades</h3>
+                <h3 class="com_borda">Inscrição</h3>
+                <h3 class="com_borda">AAPM</h3>
+            </div>
         </div>
     </header>
     <main>
