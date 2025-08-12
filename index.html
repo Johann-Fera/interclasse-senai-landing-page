@@ -8,7 +8,7 @@
     <style>
         h1{
             height: 10vh;
-            font-weight: 800vh;
+            font-weight: 800;
             color: #ED553B;
             margin: 0;
         }
@@ -18,7 +18,7 @@
             margin: 0;
         }
         h3{
-            font-weight: 500vh;
+            font-weight: 500;
             height: 3vh;
             color: white;
             margin: 0;
@@ -144,6 +144,33 @@
         }
         .info-aapm > h3{
             color: #173F5F;
+        }
+        footer{
+            display: inline-flex;
+            width: 100%;
+            background-color: #ED553B;
+            position: sticky;
+            top: 0;
+            padding: 5vh;
+            justify-content: space-between;
+        }
+        .footer-icone{
+            height: 2rem;
+        }
+        .github{
+            display: flex;
+        }
+        .contato{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .media{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
         }
         @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
     </style>
@@ -273,20 +300,20 @@
     <h7>Voltar ao topo</h7>
 </body>
 <footer>
-    <div>
-        <img src="imagens/git icone.png" alt="github logo">
+    <div class="github">
+        <img src="imagens/git icone.png" alt="github logo" class="footer-icone">
         <h3>Johann Andrade</h3>
-        <img src="imagens/git icone.png" alt="github logo">
+        <img src="imagens/git icone.png" alt="github logo" class="footer-icone">
         <h3>Nicolle Rocha</h3>
     </div>
-    <div>
+    <div class="contato">
         <h3>Praça Roberto Mange, R. Santa Rosália, 30, Sorocaba - SP, 18090-110</h3>
         <h3>(15) 3212-7400</h3>
     </div>
-    <div>
-        <img src="imagens/insta icone.png" alt="instagram logo">
+    <div class="media">
+        <img src="imagens/insta icone.png" alt="instagram logo" class="footer-icone">
         <h3>SENAI sorocaba</h3>
-        <img src="imagens/face icone.png" alt="facebook logo">
+        <img src="imagens/face icone.png" alt="facebook logo" class="footer-icone">
         <h3>Senai Sorocaba - Santa Rosália</h3>
     </div>
 </footer>
