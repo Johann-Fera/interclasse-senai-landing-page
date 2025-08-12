@@ -18,18 +18,22 @@
         h3{
             font-weight: 500vh;
             height: 3vh;
+            color: white;
         }
         h4{
             font-weight: bolder;
             height: 3vh;
+            color: white;
         }
         h5{
             font-weight: bolder;
             height: 2vh;
+            color: white;
         }
         h6{
             font-weight: bold;
             height: 3vh;
+            color: white;
         }
         html{
             font-family: 'inter', sans-serif;
@@ -74,21 +78,39 @@
         .inicio_titulo{
             background-color: white;
             color: #ED553B;
-            display: flex;
+            display: grid;
             justify-content: center;
             padding: 2vh;
         }
         .modalidades{
-            background-color: white;
+            background-color: #ED553B;
             border-radius:44px;
             display: flex;
             justify-content: center;
             padding: 2vh;
             align-items: center;
+            color: white;
         }
         .grid_moda{
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
+        }
+        .taxa{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .taxa_item3{
+            grid-row-start: 1;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-end: 3;
+        }
+        .grid-aapm{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .SMOL{
+            height: 40vh;
         }
         @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
     </style>
@@ -127,11 +149,12 @@
         <img src="imagens/jogadoras volei.png" alt="jogo de volei">
         <img src="imagens/pingpong.png" alt="raquetes e bolinhas na mesa de ping-pong">
     </div>
-    <h3>Jogue partidas de vôlei e desenvolva suas habilidades socioemocionais junto de outros jogadores!</h3>
-    <h4>Taxa de R$25.00 para não associados à AAPM, por modalidade.</h4>
-    <h4>Sem taxa para associados!</h4>
-    <h4>Se interessou? Inscreva-se já!</h4>
-
+    <h3 class="modalidades">Jogue partidas de vôlei e desenvolva suas habilidades socioemocionais junto de outros jogadores!</h3>
+    <div class="taxa">
+        <h4>Taxa de R$25.00 para não associados à AAPM, por modalidade.</h4>
+        <h4>Sem taxa para associados!</h4>
+        <h4 class="taxa_item3">Se interessou? Inscreva-se já!</h4>
+    </div>
     <form action="" method="post">
         <Center>
         <h1>INSCRIÇÃO INTERCLASSES 2025</h1>
@@ -197,17 +220,16 @@
         <input type="submit" name="enviar" value="ENVIAR" id="enviar">
         <input type="reset" name="resetar" value="REDEFINIR" id="resetar">
     </form>
-
-    <div>
+    <div class="grid-aapm">
         <div>
             <h4>AAPM</h4>
             <h3>Confira as vantagens do patrocínio da organização à escola.</h3>
             <h3>Junte-se à AAPM e desfrute dos seus benefícios!</h3>
             <button>Ver benefícios</button>
-            <h3>Acesso ao Wi-fi e video-games; Passeios culturais bimestrais; Sorteios e brindes; Descontos na cantina; E mais!</h3>
+            <!---<h3>Acesso ao Wi-fi e video-games; Passeios culturais bimestrais; Sorteios e brindes; Descontos na cantina; E mais!</h3> --->
         </div>
         <div>
-            <img src="imagens/pingspongs.jpg" alt="foto de beneficio">
+            <img class="SMOL" src="imagens/pingspongs.jpg" alt="foto de beneficio">
             <img src="imagens/botao selecionado.png" alt="botão selecionado">
             <img src="imagens/botao ns.png" alt="botão não selecionado">
             <img src="imagens/botao ns.png" alt="botão não selecionado">
