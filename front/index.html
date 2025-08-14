@@ -296,16 +296,16 @@
             <label for="objetivo">Quantidade de membros:</label>
             <select name="objetivo" id="objetivo">
                 <option value="">Selecione</option>
-                <option value="dois">2</option>
-                <option value="tres">3</option>
-                <option value="quatro">4</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
             </select>
             <br>
 
             <label>Pagou a AAPM?</label><br>
-            <input class="emlinha" type="radio" name="time" id="simm">
+            <input class="emlinha" type="radio" name="timee" id="simm">
             <label class="emlinha" for="simm">Sim</label>
-            <input class="emlinha" type="radio" name="time" id="naoo">
+            <input class="emlinha" type="radio" name="timee" id="naoo">
             <label class="emlinha" for="naoo">Não</label>
             <br>
 
@@ -357,7 +357,8 @@
     </footer>
 </body>
 <script>
-    const apiUrl = 'http://localhost:8000/api/';
+    //SSSSSSSSSSSSSSSSSSSSSSSSSSSSCCCCCCCCCCCCCCCCCCCCCCCCCCCCCRRRRRRRRRRRRRRRRRRRRRIIIIIIIIIIIIIIIIIIIIPPPPPPPPPPPPPPPPPPPPPPTTTTTTTTTTTTTTTTTTTTT
+    const apiUrl = 'http://127.0.0.1:8000/api/';
     document.addEventListener('DOMContentLoaded', () => {
         // Enviar formulário sem recarregar a página
         document.getElementById('enviar').addEventListener('click', criarInscricao);
@@ -366,9 +367,70 @@
         event.preventDefault();
 
         const nome = document.getElementById('nome_participante').value;
+        const curso = document.getElementById('turma_participante').value;
+        const email = document.getElementById('email').value;
+        const telefone = document.getElementById('telefone').value;
+        let volei;// = document.getElementById('volei').value;
+        let futebol;// = document.getElementById('futebol').value;
+        let tenis;// document.getElementById('tenis_mesa').value;
+        let time; // document.getElementById('sim').value;
+        const nome_time = document.getElementById('nome_time').value;
+        const quant_time = document.getElementById('objetivo').value;
+        let aapm; // document.getElementById('simm').value;
+        const comentarios = document.getElementById('informacoes').value;
+
+
+        const checkbox = document.getElementById("volei");
+        if (checkbox.checked) {
+            volei = true;
+        } else {
+            volei = false;
+        }
+
+        const checkbox1 = document.getElementById("futebol");
+        if (checkbox1.checked) {
+            futebol = true;
+        } else {
+            futebol = false;
+        }
+
+        const checkbox2 = document.getElementById("tenis_mesa");
+        if (checkbox2.checked) {
+            tenis = true;
+        } else {
+            tenis = false;
+        }
+
+        const radio = document.getElementById("sim");
+        if (radio.checked) {
+            time = true;
+        } else {
+            time = false
+        }
+
+        const radio2 = document.getElementById("simm");
+        if (radio2.checked) {
+            aapm = true;
+        } else {
+            aapm = false
+        }
 
         const fd = new FormData();
         fd.append('nome', nome);
+        fd.append('curso_turma', curso);
+        fd.append('email', email);
+        fd.append('telefone', telefone);
+        fd.append('volei', volei);
+        fd.append('futebol', futebol);
+        fd.append('tenis', tenis);
+        fd.append('time', time);
+        fd.append('nome_time', nome_time);
+        fd.append('quant_time', quant_time);
+        fd.append('aapm', aapm);
+        fd.append('comentarios', comentarios);
+
+
+
 
         try {
             const response = await fetch(apiUrl + 'inscrito/', {
