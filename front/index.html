@@ -119,14 +119,12 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             justify-items: center;
+            padding: 5vh;
         }
         .taxa2{
-            grid-row-start: 1;
-            grid-column-start: 2;
+            padding-right: 10vh;
         }
         .taxa_item3{
-            grid-row-start: 1;
-            grid-column-start: 2;
         }
         .grid-aapm{
             display: grid;
@@ -241,7 +239,7 @@
     </header>
     <main>
         <div class="inicio">
-                <h5>05/08 - 06/08</h5>
+                <h5>05/08 - 10/10</h5>
                 <div class="inicio_titulo">
                     <h1>INTERCLASSES SENAI 2025</h1>
                     <h2>SENAI Gaspar Ricardo Júnior</h2>
@@ -267,71 +265,78 @@
             <h4 class="taxa2">Sem taxa para associados!</h4>
             <h4 class="taxa_item3">Se interessou? Inscreva-se já!</h4>
         </div>
-        <form action="" method="post">
-            <Center>
-            <h1>INSCRIÇÃO INTERCLASSES 2025</h1>
-            <h2>Venha fazer parte deste evento!</h2>
-            <Br><br>
-            </Center>
-            <h7>Verificar depois:</h7>
-            <h7>Data e prazo de inscrição;</h7>
-            <h7>Quant. membros por equipe;</h7>
-            <h7>aapm pagamento;</h7>
-            <label for="nome_participante">Nome do participante:</label>
-            <input type="text" name="" id="nome_participante" required autofocus><br>
-            <label for="turma_participante">Curso e turma do participante:</label>
-            <input type="text" name="" id="turma_participante" required autofocus><br>
-            <label for="email">Email de contato:</label>
-            <input type="email" name="email" id="email" required placeholder="Exemplo: email@email.com"><br>
-            <label for="telefone">Telefone de contato:</label>
-            <input type="number" name="telefone" id="telefone" required placeholder="Exemplo: (15)12345-6789">
+            <form action="" method="post">
+                <center>
+                    <div class="forms-inicio">
+                        <h1 class="forms-titulo">INSCRIÇÃO INTERCLASSES 2025</h1>
+                        <h2 class="forms-titulo">Venha fazer parte deste evento!</h2>
+                    </div>
+                </center>
 
-            <label>Modalidade:</label><br>
-            <input class="emlinha" type="checkbox" name="time" id="volei">
-            <label class="emlinha" for="volei">Vôlei</label>
-            <input class="emlinha" type="checkbox" name="time" id="futebol">
-            <label class="emlinha" for="futebol">Futebol</label>
-            <input class="emlinha" type="checkbox" name="time" id="tenis_mesa">
-            <label class="emlinha" for="tenis_mesa">Tenis de mesa</label>
-            <br>
+                <div class="espacinho">
+                    <label for="nome_participante">Nome do participante:</label>
+                    <input type="text" name="" id="nome_participante" required autofocus>
+                </div>
 
-            <br>
-            <label>Você possui time?</label><br>
-            <input class="emlinha" type="radio" name="time" id="sim">
-            <label class="emlinha" for="sim">Sim</label>
-            <input class="emlinha" type="radio" name="time" id="nao">
-            <label class="emlinha" for="nao">Não</label>
-            <br>
+                <div class="espacinho">
+                    <label for="turma_participante">Curso e turma do participante:</label>
+                    <input type="text" name="" id="turma_participante" required autofocus>
+                </div>
 
-            <br>
-            <label for="nome_time">Nome do time:</label>
-            <input type="text" name="" id="nome_time" required autofocus><br>
+                <div class="espacinho">
+                    <label for="email">Email de contato:</label>
+                    <input type="email" name="email" id="email" required placeholder="Exemplo: email@email.com">
+                </div>
 
-            <br>
-            <label for="objetivo">Quantidade de membros:</label>
-            <select name="objetivo" id="objetivo">
-                <option value="">Selecione</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-            </select>
-            <br>
+                <div class="espacinho">
+                    <label for="telefone">Telefone de contato:</label>
+                    <input type="number" name="telefone" id="telefone" required placeholder="Exemplo: (15)12345-6789">
+                </div>
 
-            <label>Pagou a AAPM?</label><br>
-            <input class="emlinha" type="radio" name="timee" id="simm">
-            <label class="emlinha" for="simm">Sim</label>
-            <input class="emlinha" type="radio" name="timee" id="naoo">
-            <label class="emlinha" for="naoo">Não</label>
-            <br>
+                <div class="espacinho">
+                    <label>Modalidade:</label>
+                    <div>
+                        <input class="emlinha" type="checkbox" name="time" id="volei">
+                        <label class="emlinha" for="volei">Vôlei</label>
+                        <input class="emlinha" type="checkbox" name="time" id="futebol">
+                        <label class="emlinha" for="futebol">Futebol</label>
+                        <input class="emlinha" type="checkbox" name="time" id="tenis_mesa">
+                        <label class="emlinha" for="tenis_mesa">Tenis de mesa</label>
+                    </div>
+                </div>
 
-            <br>
-            <label for="informacoes">Comentários adicionais:</label>
-            <textarea name="informacoes" id="informacoes" rows="8" cols="54" maxlength="200"></textarea>
-            <br>
+                <div class="espacinho">
+                    <label>Você possui time?</label>
+                    <div>
+                        <input class="emlinha" type="radio" name="time" id="sim">
+                        <label class="emlinha" for="sim">Sim</label>
+                        <input class="emlinha" type="radio" name="time" id="nao">
+                        <label class="emlinha" for="nao">Não</label>
+                    </div>
+                </div>
 
-            <input type="submit" name="enviar" value="ENVIAR" id="enviar">
-            <input type="reset" name="resetar" value="REDEFINIR" id="resetar">
-        </form>
+                <div class="espacinho">
+                    <label for="nome_time">Nome do time:</label>
+                    <input type="text" name="" id="nome_time" required autofocus>
+                </div>
+
+                <div class="espacinho">
+                    <label>Pagou a AAPM?</label>
+                    <input class="emlinha" type="radio" name="timee" id="simm">
+                    <label class="emlinha" for="simm">Sim</label>
+                    <input class="emlinha" type="radio" name="timee" id="naoo">
+                    <label class="emlinha" for="naoo">Não</label>
+                </div>
+
+                <div class="espacinho">
+                    <label for="informacoes">Comentários adicionais:</label>
+                    <textarea name="informacoes" id="informacoes" rows="8" cols="54" maxlength="200"></textarea>
+                </div>
+
+
+                <input type="submit" name="enviar" value="ENVIAR" id="enviar">
+                <input type="reset" name="resetar" value="REDEFINIR" id="resetar">
+            </form>
         <div class="grid-aapm">
             <div class="info-aapm">
                 <h4>AAPM</h4>
