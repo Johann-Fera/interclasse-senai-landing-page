@@ -113,20 +113,26 @@
             padding: 4vh;
         }
         .grid_moda{
+        }
+        .moda-fotos{
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            height: 50vh;
+            padding-left: 4vh;
+            padding-right: 4vh;
+            align-items: center;
         }
         .taxa{
             display: grid;
             grid-template-columns: 1fr 1fr;
             justify-items: center;
         }
+        .taxa2{
+            grid-row-start: 1;
+            grid-column-start: 2;
+        }
         .taxa_item3{
             grid-row-start: 1;
             grid-column-start: 2;
-            grid-column-end: 3;
-            grid-row-end: 3;
         }
         .grid-aapm{
             display: grid;
@@ -253,16 +259,18 @@
             <h2 class="modalidades">MODALIDADES</h2>
         </div>
         <div class="grid_moda">
-            <img src="imagens/futs.png" alt="bola futebol no gol" style="width: 100%">
-            <img src="imagens/jogadoras volei.png" alt="jogo de volei" style="width: 100%">
-            <img src="imagens/pingpong.png" alt="raquetes e bolinhas na mesa de ping-pong" style="width: 100%">
+            <div class="moda-fotos">
+                <img src="imagens/futs.png" alt="bola futebol no gol" style="width: 100%">
+                <img src="imagens/jogadoras volei.png" alt="jogo de volei" style="width: 100%">
+                <img src="imagens/pingpong.png" alt="raquetes e bolinhas na mesa de ping-pong" style="width: 100%">
+            </div>
         </div>
         <div class="modalidades-grid">
             <h3 class="modalidades">Jogue partidas de vôlei e desenvolva suas habilidades socioemocionais junto de outros jogadores!</h3>
         </div>
         <div class="taxa">
-            <h4>Taxa de R$25.00 para não associados à AAPM, por modalidade.</h4>
-            <h4>Sem taxa para associados!</h4>
+            <h4 class="taxa2">Taxa de R$25.00 para não associados à AAPM, por modalidade.</h4>
+            <h4 class="taxa2">Sem taxa para associados!</h4>
             <h4 class="taxa_item3">Se interessou? Inscreva-se já!</h4>
         </div>
         <form action="" method="post">
