@@ -1,10 +1,10 @@
-form > h1, form > h2, form > h6, label, input, select, textarea{
+form > h1, form > h2, form > h6, input, select, textarea{
     display:block;
     width: 95%;
     padding: 10px;
+    font-weight: 600;
     margin-bottom: 20px;
-   font-family: "Inter", sans-serif;
-    color: #FFFFFF
+    color: #20639B
 }
 .emlinha{
     display: inline;
@@ -13,7 +13,7 @@ form > h1, form > h2, form > h6, label, input, select, textarea{
 form{
     width: 550px;
     margin: auto;
-    background: #3CAEA3;
+    background: #568DBA;
     padding: 40px;
     border-radius: 10px;
     border: solid, 15px;
@@ -21,11 +21,23 @@ form{
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
 }
+.forms-inicio{
+    padding-bottom: 5vh;
+}
+.espacinho{
+    padding-top: 2vh;
+}
+.forms-titulo{
+    color: #fff;
+}
 label{
+    font-weight: 600;
     padding: 0;
     margin: 0;
     width: 100%;
     font-size: 18;
+    font-family: 'inter', sans-serif;
+    color: #FFFFFF
 }
 medidas{
     display: inline;
@@ -66,19 +78,19 @@ input:focus, select:focus, textarea:focus{
     width:  100%;
     border: 2px solid #20639B;
     background-color: #20639B;
-    color: #fff;
+    color: #20639B;
     cursor: pointer;
     font-size: 17px;
     letter-spacing: 0.03cm;
 }
 #resetar:hover{
      background-color: #20639B;
-    color: #3CAEA3;
+    color: #FFFFFF;
     transition: all linear 0.3s;
 }
 #resetar:not(hover){
     background-color: #568DBA;
-    color: #fff;
+    color: #20639B;
     transition: all linear 0.3s;
 }
 
