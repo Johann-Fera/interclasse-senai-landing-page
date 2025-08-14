@@ -10,7 +10,6 @@ class inscrito(models.Model):
     tenis = models.BooleanField(default=False)
     time = models.BooleanField(default=False)
     nome_time = models.CharField(max_length=50, default=" ")
-    quant_time = models.PositiveIntegerField(default=0)
     aapm = models.BooleanField(default=False)
     comentarios = models.TextField(default=" ")
 
