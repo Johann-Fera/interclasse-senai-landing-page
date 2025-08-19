@@ -53,6 +53,7 @@
             position: sticky;
             top: 0;
             grid-template-columns: min-content min-content auto;
+            z-index: 3;
         }
         .flex{
             display: flex;
@@ -122,17 +123,12 @@
             color: white;
             width: 60%;
             justify-self: center;
+            position: relative;
         }
         .grid_moda{
             display: grid;
             padding: 2vh;
-            grid-template-rows: 1fr 8fr 1fr;
-        }
-        .modalidades-grid{
-            position: relative;
-        }
-        .position{
-            position: relative;
+            grid-template-rows: 1fr 7fr 1fr;
         }
         .moda-fotos{
             display: grid;
@@ -319,7 +315,7 @@
         <div class="position">
             <div class="grid_moda">
                 <div class="modalidades-grid">
-                    <h2 class="modalidades" style="position: absolute;">MODALIDADES</h2>
+                    <h2 class="modalidades" style="top: 5vh;">MODALIDADES</h2>
                 </div>
                 <div class="moda-fotos" id="muda-foto">
                     <div class="moda1" onclick="moda_muda(1)"></div>
@@ -330,7 +326,7 @@
                     <img src="imagens/pingpong.png" alt="raquetes e bolinhas na mesa de ping-pong" style="width: 100%; height: -webkit-fill-available; border-radius: 0vh 5vh 5vh 0vh;">--->
                 </div>
                 <div class="modalidades-grid">
-                    <h3 class="modalidades" id="desc-moda">Jogue partidas de vôlei e desenvolva suas habilidades socioemocionais junto de outros jogadores!</h3>
+                    <h3 class="modalidades" style="bottom: 2vh;" id="desc-moda">Jogue partidas de vôlei e desenvolva suas habilidades socioemocionais junto de outros jogadores!</h3>
                 </div>
             </div>
         </div>
