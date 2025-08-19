@@ -202,6 +202,18 @@
             color: #173F5F;
             padding-bottom: 3vh;
         }
+        .espacinho_aapm{
+            color: white;
+            font-size: 3vh;
+            padding-bottom: 1vh;
+        }
+        .aapm_espacinhozinho{
+            border: solid #20639B;
+            margin-top: 2vh;
+            padding: 1vh;
+            border-radius: 1vh;
+            justify-items: center;
+        }
         footer{
             display: grid;
             width: 100%;
@@ -389,10 +401,22 @@
                 <input class="emlinha" type="radio" name="timee" id="naoo">
                 <label class="emlinha" for="naoo">Não</label>
             </div>
+
+            <div id="espaco_aapm">
+                <center>
+                    <img src="imagens/PIX_AAPM.png" alt="qr_code" style="padding-top: 3vh;">
+                </center>
+                <div class="aapm_espacinhozinho">
+                    <h2 class="espacinho_aapm">CNPJ - 04.762.532/0001-17</h2>
+                    <h3>QR Code e chave pix para realização do pagamento</h3>
+                </div>
+            </div>
+
             <div class="espacinho">
                 <label for="informacoes">Comentários adicionais:</label>
                 <textarea name="informacoes" id="informacoes" rows="4" cols="54" maxlength="200"></textarea>
             </div>
+
             <input type="submit" name="enviar" value="ENVIAR" id="enviar">
             <input type="reset" name="resetar" value="REDEFINIR" id="resetar">
         </form>
