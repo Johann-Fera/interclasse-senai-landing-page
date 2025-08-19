@@ -86,11 +86,11 @@
         }
         .inicio{
             color: white;
+            background-image:url(imagens/Volei\ menu.png);
+             background-repeat: no-repeat;
+            background-size: cover;
             padding: 8vh;
             padding-top: 14vh;
-            background-image:url(imagens/Volei\ menu.png);
-            background-repeat: no-repeat;
-            background-size: cover;
         }
         .inicio > h5{
             justify-self: center;
@@ -305,13 +305,15 @@
     </header>
     <main>
         <div class="inicio" id="ancora-inicio">
-                <h5>05/08 - 06/08</h5>
-                <div class="inicio_titulo">
-                    <h1>INTERCLASSES SENAI 2025</h1>
-                    <h2>SENAI Gaspar Ricardo Júnior</h2>
-                </div>
-                <br>
-                <h3>A época de esportes chegou para te divertir e te desafiar! Participe!</h3>
+            <div class="inicio_imagem">
+                    <h5>05/08 - 06/08</h5>
+                    <div class="inicio_titulo">
+                        <h1>INTERCLASSES SENAI 2025</h1>
+                        <h2>SENAI Gaspar Ricardo Júnior</h2>
+                    </div>
+                    <br>
+                    <h3>A época de esportes chegou para te divertir e te desafiar! Participe!</h3>
+            </div>
         </div>
         <div class="ancora-size" id="ancora-modalidades"></div>
         <div class="position">
@@ -386,14 +388,14 @@
             </div>
             <div class="espacinho">
                 <label>Pagou a AAPM?</label>
-                <input class="emlinha" type="radio" name="timee" id="simm">
+                <input class="emlinha" type="radio" name="timee" id="simm" onchange="simm_aapm(1)">
                 <label class="emlinha" for="simm">Sim</label>
-                <input class="emlinha" type="radio" name="timee" id="naoo">
+                <input class="emlinha" type="radio" name="timee" id="naoo" onchange="naoo_aapmm(0)">
                 <label class="emlinha" for="naoo">Não</label>
             </div>
             <div class="espacinho">
                 <label for="informacoes">Comentários adicionais:</label>
-                <textarea name="informacoes" id="informacoes" rows="8" cols="54" maxlength="200"></textarea>
+                <textarea name="informacoes" id="informacoes" rows="4" cols="54" maxlength="200"></textarea>
             </div>
             <input type="submit" name="enviar" value="ENVIAR" id="enviar">
             <input type="reset" name="resetar" value="REDEFINIR" id="resetar">
