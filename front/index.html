@@ -45,12 +45,13 @@
         }
         html{
             font-family: 'inter', sans-serif;
+            scroll-behavior: smooth;
         }
         header{
             display: grid;
             width: 100%;
             background-color: #568DBA;
-            position: sticky;
+            position: fixed;
             top: 0;
             grid-template-columns: min-content min-content auto;
             z-index: 3;
@@ -75,7 +76,7 @@
             font-weight: 600;
         }
         .ancora-size{
-            height: 15vh;
+            height: 12vh;
         }
         .com_borda{
             padding-left: 20%;
@@ -87,11 +88,10 @@
         }
         .inicio{
             color: white;
-            padding: 8vh;
-            padding-top: 14vh;
             background-image:url(imagens/Volei\ menu.png);
             background-repeat: no-repeat;
             background-size: cover;
+            padding: 8vh;
         }
         .inicio > h5{
             justify-self: center;
@@ -292,7 +292,7 @@
         <img src="imagens/sesi logo.png" alt="logo SESI" class="logo-fotos">
         <div class="flex">
             <div class="ancoras">
-                <a class="sem_borda" href="">início</a>
+                <a class="sem_borda" href="#ancora-inicio">início</a>
                 <a class="com_borda" href="#ancora-modalidades">Modalidades</a>
                 <a class="com_borda" href="#ancora-inscricao">Inscrição</a>
                 <a class="com_borda" href="#ancora-aapm">AAPM</a>
@@ -300,14 +300,15 @@
         </div>
     </header>
     <main>
-        <div class="inicio" id="ancora-inicio">
-                <h5>05/08 - 06/08</h5>
-                <div class="inicio_titulo">
-                    <h1>INTERCLASSES SENAI 2025</h1>
-                    <h2>SENAI Gaspar Ricardo Júnior</h2>
-                </div>
-                <br>
-                <h3>A época de esportes chegou para te divertir e te desafiar! Participe!</h3>
+        <div class="ancora-size" id="ancora-inicio"></div>
+        <div class="inicio">
+            <h5>05/08 - 06/08</h5>
+            <div class="inicio_titulo">
+                <h1>INTERCLASSES SENAI 2025</h1>
+                <h2>SENAI Gaspar Ricardo Júnior</h2>
+            </div>
+            <br>
+            <h3>A época de esportes chegou para te divertir e te desafiar! Participe!</h3>
         </div>
         <div class="ancora-size" id="ancora-modalidades"></div>
         <div class="position">
@@ -382,9 +383,9 @@
             </div>
             <div class="espacinho">
                 <label>Pagou a AAPM?</label>
-                <input class="emlinha" type="radio" name="timee" id="simm">
+                <input class="emlinha" type="radio" name="timee" id="simm" onchange="naoo_aapm(0)">
                 <label class="emlinha" for="simm">Sim</label>
-                <input class="emlinha" type="radio" name="timee" id="naoo">
+                <input class="emlinha" type="radio" name="timee" id="naoo" onchange="naoo_aapm(1)">
                 <label class="emlinha" for="naoo">Não</label>
             </div>
             <div class="espacinho">
@@ -412,7 +413,7 @@
                 <h5 id="descricao-beneficio" style="padding-left: 5vh;">Descontrair com uma partida de ping-pong!</h5>
             </div>
         </div>
-        <a class="voltar" href="">Voltar ao topo</a>
+        <a class="voltar" href="#ancora-inicio">Voltar ao topo</a>
     </main>
     <footer>
 
@@ -482,6 +483,22 @@
             espaco.appendChild(div);
         } else {
             const div = document.getElementById('cria_time');
+            div.remove();
+        }
+    }
+    function naoo_aapm(tem_aapm) {
+        const espaco = document.getElementById('espaco_aapm');
+        if (tem_aapm == 1) {
+            const div = document.createElement('div');
+            div.className = "espacinho"
+            div.id = "cria_aapm";
+            div.innerHTML = `
+                <label for="nome_time">Nome do time:</label>
+                <input type="text" name="" id="nome_time" required>
+            `;
+            espaco.appendChild(div);
+        } else {
+            const div = document.getElementById('cria_aapm');
             div.remove();
         }
     }
