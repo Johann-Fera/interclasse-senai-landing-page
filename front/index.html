@@ -117,6 +117,7 @@
         .grid_moda{
             display: grid;
             padding: 2vh;
+            grid-template-rows: 1fr 6fr 1fr;
         }
         .modalidades-grid{
             padding: 4vh;
@@ -127,10 +128,33 @@
         }
         .moda-fotos{
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 2fr 1fr;
             padding-left: 4vh;
             padding-right: 4vh;
             align-items: center;
+        }
+        .moda1{
+            background-image: url(imagens/futs.png);
+            height: 100%;
+            border-radius: 5vh 0vh 0vh 5vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        .moda2{
+            background-image: url(imagens/jogadoras\ volei.png);
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        .moda3{
+            background-image: url(imagens/pingpong.png);
+            height: 100%;
+            border-radius: 0vh 5vh 5vh 0vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
         }
         .taxa{
             display: grid;
@@ -284,16 +308,19 @@
         <div class="position">
             <div class="grid_moda">
                 <div class="modalidades-grid">
-                <h2 class="modalidades" style="position: absolute;">MODALIDADES</h2>
-            </div>
+                    <h2 class="modalidades" style="position: absolute;">MODALIDADES</h2>
+                </div>
                 <div class="moda-fotos">
-                    <img src="imagens/futs.png" alt="bola futebol no gol" style="width: 100%; height: -webkit-fill-available; border-radius: 5vh 0vh 0vh 5vh;">
+                    <div class="moda1"></div>
+                    <div class="moda2"></div>
+                    <div class="moda3"></div>
+                    <!---<img src="imagens/futs.png" alt="bola futebol no gol" style="width: 100%; height: -webkit-fill-available; border-radius: 5vh 0vh 0vh 5vh;">
                     <img src="imagens/jogadoras volei.png" alt="jogo de volei" style="width: 100%; height: -webkit-fill-available;">
-                    <img src="imagens/pingpong.png" alt="raquetes e bolinhas na mesa de ping-pong" style="width: 100%; height: -webkit-fill-available; border-radius: 0vh 5vh 5vh 0vh;">
+                    <img src="imagens/pingpong.png" alt="raquetes e bolinhas na mesa de ping-pong" style="width: 100%; height: -webkit-fill-available; border-radius: 0vh 5vh 5vh 0vh;">--->
                 </div>
                 <div class="modalidades-grid">
-                <h3 class="modalidades">Jogue partidas de vôlei e desenvolva suas habilidades socioemocionais junto de outros jogadores!</h3>
-            </div>
+                    <h3 class="modalidades">Jogue partidas de vôlei e desenvolva suas habilidades socioemocionais junto de outros jogadores!</h3>
+                </div>
             </div>
         </div>
         <div class="taxa">
