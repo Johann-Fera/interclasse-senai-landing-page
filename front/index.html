@@ -114,8 +114,16 @@
             align-items: center;
             color: white;
         }
+        .grid_moda{
+            display: grid;
+            padding: 2vh;
+        }
         .modalidades-grid{
             padding: 4vh;
+            position: relative;
+        }
+        .position{
+            position: relative;
         }
         .moda-fotos{
             display: grid;
@@ -129,6 +137,8 @@
             grid-template-columns: 1fr 1fr;
             justify-items: center;
             padding: 5vh;
+            padding-left: 12vh;
+            padding-right: 12vh;
         }
         .taxa2{
             padding-right: 10vh;
@@ -138,10 +148,11 @@
             grid-template-columns: 1fr 1fr;
             background-color: #FFFFFF70;
             border-radius: 22px;
-            padding: 3vh;
-            padding-top: 1vh;
+            padding: 5vh;
+            padding-top: 3vh;
             grid-gap: 3vh;
-            margin: 2vh;
+            margin: 10vh;
+            height: 60vh;
         }
         .logo-fotos{
             height: 10vh;
@@ -160,23 +171,26 @@
         }
         .info-aapm > h4{
             color: #173F5F;
+            padding-bottom: 3vh;
         }
         footer{
-            display: inline-flex;
+            display: grid;
             width: 100%;
+            grid-template-columns: 1fr 1fr 1fr;
             background-color: #ED553B;
-            padding-top: 5vh;
-            padding-bottom: 5vh;
-            justify-content: space-between;
+            padding-top: 7vh;
+            padding-bottom: 7vh;
+            justify-content: center;
+            align-items: stretch;
         }
         .footer-icone{
             height: 2rem;
         }
         .github{
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             align-items: flex-start;
-            padding-left: 5vh;
+            padding-left: 10vh;
             justify-content: space-between;
         }
         .contato{
@@ -187,10 +201,10 @@
         }
         .media{
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             align-items: flex-start;
             justify-content: space-between;
-            padding-right: 5vh;
+            padding-right: 10vh;
         }
         .beneficios-img{
             background-image: url(imagens/pingspongs.jpg);
@@ -267,23 +281,25 @@
                 <h3>A época de esportes chegou para te divertir e te desafiar! Participe!</h3>
         </div>
         <div class="ancora-size" id="ancora-modalidades"></div>
-        <div class="modalidades-grid">
-            <h2 class="modalidades">MODALIDADES</h2>
-        </div>
-        <div class="grid_moda">
-            <div class="moda-fotos">
-                <img src="imagens/futs.png" alt="bola futebol no gol" style="width: 100%">
-                <img src="imagens/jogadoras volei.png" alt="jogo de volei" style="width: 100%">
-                <img src="imagens/pingpong.png" alt="raquetes e bolinhas na mesa de ping-pong" style="width: 100%">
+        <div class="position">
+            <div class="grid_moda">
+                <div class="modalidades-grid">
+                <h2 class="modalidades" style="position: absolute;">MODALIDADES</h2>
             </div>
-        </div>
-        <div class="modalidades-grid">
-            <h3 class="modalidades">Jogue partidas de vôlei e desenvolva suas habilidades socioemocionais junto de outros jogadores!</h3>
+                <div class="moda-fotos">
+                    <img src="imagens/futs.png" alt="bola futebol no gol" style="width: 100%; height: -webkit-fill-available; border-radius: 5vh 0vh 0vh 5vh;">
+                    <img src="imagens/jogadoras volei.png" alt="jogo de volei" style="width: 100%; height: -webkit-fill-available;">
+                    <img src="imagens/pingpong.png" alt="raquetes e bolinhas na mesa de ping-pong" style="width: 100%; height: -webkit-fill-available; border-radius: 0vh 5vh 5vh 0vh;">
+                </div>
+                <div class="modalidades-grid">
+                <h3 class="modalidades">Jogue partidas de vôlei e desenvolva suas habilidades socioemocionais junto de outros jogadores!</h3>
+            </div>
+            </div>
         </div>
         <div class="taxa">
             <h4 class="taxa2">Taxa de R$25.00 para não associados à AAPM, por modalidade.</h4>
             <h4 class="taxa2">Sem taxa para associados!</h4>
-            <h4 class="taxa_item3">Se interessou? Inscreva-se já!</h4>
+            <h4 class="taxa2">Se interessou? Inscreva-se já!</h4>
         </div>
         <div class="ancora-size" id="ancora-inscricao"></div>
         <form action="" method="POST">
@@ -349,10 +365,10 @@
         <div class="ancora-size" id="ancora-aapm"></div>
         <div class="grid-aapm">
             <div class="info-aapm">
-                <h2>AAPM</h2>
+                <h2 style="padding-bottom: 3vh;">AAPM</h2>
                 <h4>Confira as vantagens do patrocínio da organização à escola.</h4>
                 <h4>Junte-se à AAPM e desfrute dos seus benefícios!</h4>
-                <h4>Acesso ao Wi-fi e video-games; Passeios culturais bimestrais; Sorteios e brindes; Descontos na cantina; E mais!</h4>
+                <h4 style="font-style: italic;">Acesso ao Wi-fi e video-games; Passeios culturais bimestrais; Sorteios e brindes; Descontos na cantina; E mais!</h4>
             </div>
             <div class="beneficios">
                 <div class="beneficios-img" id="foto-beneficio">
