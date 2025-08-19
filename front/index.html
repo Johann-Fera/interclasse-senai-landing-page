@@ -89,15 +89,15 @@
         .inicio{
             color: white;
             background-image:url(imagens/Volei\ menu.png);
-            background-repeat: no-repeat;
+             background-repeat: no-repeat;
             background-size: cover;
             padding: 8vh;
         }
-        .inicio > h5{
+        .inicio_imagem > h5{
             justify-self: center;
             padding-bottom: 2vh;
         }
-        .inicio > h3{
+        .inicio_imagem > h3{
             background-color: white;
             color: #173F5F;
             border-radius:44px;
@@ -202,6 +202,18 @@
             color: #173F5F;
             padding-bottom: 3vh;
         }
+        .espacinho_aapm{
+            color: white;
+            font-size: 3vh;
+            padding-bottom: 1vh;
+        }
+        .aapm_espacinhozinho{
+            border: solid #20639B;
+            margin-top: 2vh;
+            padding: 1vh;
+            border-radius: 1vh;
+            justify-items: center;
+        }
         footer{
             display: grid;
             width: 100%;
@@ -302,13 +314,15 @@
     <main>
         <div class="ancora-size" id="ancora-inicio"></div>
         <div class="inicio">
-            <h5>05/08 - 06/08</h5>
-            <div class="inicio_titulo">
-                <h1>INTERCLASSES SENAI 2025</h1>
-                <h2>SENAI Gaspar Ricardo Júnior</h2>
+            <div class="inicio_imagem">
+                <h5>05/08 - 06/08</h5>
+                <div class="inicio_titulo">
+                    <h1>INTERCLASSES SENAI 2025</h1>
+                    <h2>SENAI Gaspar Ricardo Júnior</h2>
+                </div>
+                <br>
+                <h3>A época de esportes chegou para te divertir e te desafiar! Participe!</h3>
             </div>
-            <br>
-            <h3>A época de esportes chegou para te divertir e te desafiar! Participe!</h3>
         </div>
         <div class="ancora-size" id="ancora-modalidades"></div>
         <div class="position">
@@ -388,10 +402,16 @@
                 <input class="emlinha" type="radio" name="timee" id="naoo" onchange="naoo_aapm(1)">
                 <label class="emlinha" for="naoo">Não</label>
             </div>
+
+            <div id="espaco_aapm">
+                
+            </div>
+
             <div class="espacinho">
                 <label for="informacoes">Comentários adicionais:</label>
-                <textarea name="informacoes" id="informacoes" rows="8" cols="54" maxlength="200"></textarea>
+                <textarea name="informacoes" id="informacoes" rows="4" cols="54" maxlength="200"></textarea>
             </div>
+
             <input type="submit" name="enviar" value="ENVIAR" id="enviar">
             <input type="reset" name="resetar" value="REDEFINIR" id="resetar">
         </form>
@@ -493,8 +513,13 @@
             div.className = "espacinho"
             div.id = "cria_aapm";
             div.innerHTML = `
-                <label for="nome_time">Nome do time:</label>
-                <input type="text" name="" id="nome_time" required>
+                <center>
+                    <img src="imagens/PIX_AAPM.png" alt="qr_code" style="padding-top: 3vh;">
+                </center>
+                <div class="aapm_espacinhozinho">
+                    <h2 class="espacinho_aapm">CNPJ - 04.762.532/0001-17</h2>
+                    <h3>QR Code e chave pix para realização do pagamento</h3>
+                </div>
             `;
             espaco.appendChild(div);
         } else {
