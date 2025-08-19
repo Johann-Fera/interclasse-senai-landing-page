@@ -120,14 +120,15 @@
             padding: 2vh;
             align-items: center;
             color: white;
+            width: 60%;
+            justify-self: center;
         }
         .grid_moda{
             display: grid;
             padding: 2vh;
-            grid-template-rows: 1fr 6fr 1fr;
+            grid-template-rows: 1fr 8fr 1fr;
         }
         .modalidades-grid{
-            padding: 4vh;
             position: relative;
         }
         .position{
@@ -136,14 +137,15 @@
         .moda-fotos{
             display: grid;
             grid-template-columns: 1fr 2fr 1fr;
-            padding-left: 4vh;
-            padding-right: 4vh;
+            margin-left: 4vh;
+            margin-right: 4vh;
             align-items: center;
         }
         .moda1{
             background-image: url(imagens/futs.png);
             height: 100%;
             border-radius: 5vh 0vh 0vh 5vh;
+            border: white solid 2vh;
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -162,6 +164,7 @@
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
+            border: white solid 2vh;
         }
         .taxa{
             display: grid;
@@ -316,16 +319,16 @@
                 <div class="modalidades-grid">
                     <h2 class="modalidades" style="position: absolute;">MODALIDADES</h2>
                 </div>
-                <div class="moda-fotos">
-                    <div class="moda1"></div>
-                    <div class="moda2"></div>
-                    <div class="moda3"></div>
+                <div class="moda-fotos" id="muda-foto">
+                    <div class="moda1" onclick="moda_muda(1)"></div>
+                    <div class="moda2" onclick="moda_muda(2)"></div>
+                    <div class="moda3" onclick="moda_muda(3)"></div>
                     <!---<img src="imagens/futs.png" alt="bola futebol no gol" style="width: 100%; height: -webkit-fill-available; border-radius: 5vh 0vh 0vh 5vh;">
                     <img src="imagens/jogadoras volei.png" alt="jogo de volei" style="width: 100%; height: -webkit-fill-available;">
                     <img src="imagens/pingpong.png" alt="raquetes e bolinhas na mesa de ping-pong" style="width: 100%; height: -webkit-fill-available; border-radius: 0vh 5vh 5vh 0vh;">--->
                 </div>
                 <div class="modalidades-grid">
-                    <h3 class="modalidades">Jogue partidas de vôlei e desenvolva suas habilidades socioemocionais junto de outros jogadores!</h3>
+                    <h3 class="modalidades" id="desc-moda">Jogue partidas de vôlei e desenvolva suas habilidades socioemocionais junto de outros jogadores!</h3>
                 </div>
             </div>
         </div>
@@ -455,6 +458,21 @@
         // Enviar formulário sem recarregar a página
         document.getElementById('enviar').addEventListener('click', criarInscricao);
     });
+    function moda_muda(shine) {
+        const grid = document.getElementById('muda-foto');
+        const modades = document.getElementById('desc-moda')
+        if (shine == 1) {
+            grid.style.gridTemplateColumns = '2fr 1fr 1fr'; 
+            modades.innerText = 'Trabalhe em equipe e desenvolva melhores capacidades atléticas!'
+        } else if (shine == 2) {
+            grid.style.gridTemplateColumns = '1fr 2fr 1fr';   
+            modades.innerText = 'Jogue partidas de vôlei e desenvolva suas habilidades socioemocionais junto de outros jogadores!'
+        } else {
+            grid.style.gridTemplateColumns = '1fr 1fr 2fr';   
+            modades.innerText = 'Desafie a si mesmo, e a sua mira, competindo com demais alunos!'    
+        }
+        
+    }
     function sim_time(tem_time) {
         const espaco = document.getElementById('espaco_time');
         if (tem_time == 1) {
@@ -482,8 +500,8 @@
         let futebol;// = document.getElementById('futebol').value;
         let tenis;// document.getElementById('tenis_mesa').value;
         let time; // document.getElementById('sim').value;
-        const nome_time = document.getElementById('nome_time').value;
         let aapm; // document.getElementById('simm').value;
+        let nome_time = "bazinga";
         const comentarios = document.getElementById('informacoes').value;
 
 
@@ -511,8 +529,10 @@
         const radio = document.getElementById("sim");
         if (radio.checked) {
             time = true;
+            let nome_time = document.getElementById('nome_time').value;
         } else {
             time = false
+            let nome_time = "(sem time)";
         }
 
         const radio2 = document.getElementById("simm");
