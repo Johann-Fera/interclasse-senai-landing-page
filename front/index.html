@@ -66,6 +66,9 @@
             font-size: 2vh;
             font-weight: 600;
         }
+        .ancora-size{
+            height: 15vh;
+        }
         .com_borda{
             padding-left: 20%;
             border-left: solid 2px white;
@@ -246,7 +249,7 @@
         <img src="imagens/sesi logo.png" alt="logo SESI" class="logo-fotos">
         <div class="flex">
             <div class="ancoras">
-                <a class="sem_borda" href="#ancora-inicio">início</a>
+                <a class="sem_borda" href="">início</a>
                 <a class="com_borda" href="#ancora-modalidades">Modalidades</a>
                 <a class="com_borda" href="#ancora-inscricao">Inscrição</a>
                 <a class="com_borda" href="#ancora-aapm">AAPM</a>
@@ -263,7 +266,8 @@
                 <br>
                 <h3>A época de esportes chegou para te divertir e te desafiar! Participe!</h3>
         </div>
-        <div class="modalidades-grid" id="ancora-modalidades">
+        <div class="ancora-size" id="ancora-modalidades"></div>
+        <div class="modalidades-grid">
             <h2 class="modalidades">MODALIDADES</h2>
         </div>
         <div class="grid_moda">
@@ -281,79 +285,69 @@
             <h4 class="taxa2">Sem taxa para associados!</h4>
             <h4 class="taxa_item3">Se interessou? Inscreva-se já!</h4>
         </div>
-            <form action="" method="POST" id="ancora-inscricao">
-                <center>
-                    <div class="forms-inicio">
-                        <h1 class="forms-titulo">INSCRIÇÃO INTERCLASSES 2025</h1>
-                        <h2 class="forms-titulo">Venha fazer parte deste evento!</h2>
-                    </div>
-                </center>
-
-                <div class="espacinho">
-                    <label for="nome_participante">Nome do participante:</label>
-                    <input type="text" name="" id="nome_participante" required autofocus>
+        <div class="ancora-size" id="ancora-inscricao"></div>
+        <form action="" method="POST">
+            <center>
+                <div class="forms-inicio">
+                    <h1 class="forms-titulo">INSCRIÇÃO INTERCLASSES 2025</h1>
+                    <h2 class="forms-titulo">Venha fazer parte deste evento!</h2>
                 </div>
-
-                <div class="espacinho">
-                    <label for="turma_participante">Curso e turma do participante:</label>
-                    <input type="text" name="" id="turma_participante" required autofocus>
+            </center>
+            <div class="espacinho">
+                <label for="nome_participante">Nome do participante:</label>
+                <input type="text" name="" id="nome_participante" required>
+            </div>
+            <div class="espacinho">
+                <label for="turma_participante">Curso e turma do participante:</label>
+                <input type="text" name="" id="turma_participante" required>
+            </div>
+            <div class="espacinho">
+                <label for="email">Email de contato:</label>
+                <input type="email" name="email" id="email" required placeholder="Exemplo: email@email.com">
+            </div>
+            <div class="espacinho">
+                <label for="telefone">Telefone de contato:</label>
+                <input type="number" name="telefone" id="telefone" required placeholder="Exemplo: (15)12345-6789">
+            </div>
+            <div class="espacinho">
+                <label>Modalidade:</label>
+                <div>
+                    <input class="emlinha" type="checkbox" name="time" id="volei">
+                    <label class="emlinha" for="volei">Vôlei</label>
+                    <input class="emlinha" type="checkbox" name="time" id="futebol">
+                    <label class="emlinha" for="futebol">Futebol</label>
+                    <input class="emlinha" type="checkbox" name="time" id="tenis_mesa">
+                    <label class="emlinha" for="tenis_mesa">Tenis de mesa</label>
                 </div>
-
-                <div class="espacinho">
-                    <label for="email">Email de contato:</label>
-                    <input type="email" name="email" id="email" required placeholder="Exemplo: email@email.com">
+            </div>
+            <div class="espacinho">
+                <label>Você possui time?</label>
+                <div>
+                    <input class="emlinha" type="radio" name="time" id="sim" onchange="sim_time(1)">
+                    <label class="emlinha" for="sim">Sim</label>
+                    <input class="emlinha" type="radio" name="time" id="nao" onchange="sim_time(0)">
+                    <label class="emlinha" for="nao">Não</label>
                 </div>
-
-                <div class="espacinho">
-                    <label for="telefone">Telefone de contato:</label>
-                    <input type="number" name="telefone" id="telefone" required placeholder="Exemplo: (15)12345-6789">
-                </div>
-
-                <div class="espacinho">
-                    <label>Modalidade:</label>
-                    <div>
-                        <input class="emlinha" type="checkbox" name="time" id="volei">
-                        <label class="emlinha" for="volei">Vôlei</label>
-                        <input class="emlinha" type="checkbox" name="time" id="futebol">
-                        <label class="emlinha" for="futebol">Futebol</label>
-                        <input class="emlinha" type="checkbox" name="time" id="tenis_mesa">
-                        <label class="emlinha" for="tenis_mesa">Tenis de mesa</label>
-                    </div>
-                </div>
-
-                <div class="espacinho">
-                    <label>Você possui time?</label>
-                    <div>
-                        <input class="emlinha" type="radio" name="time" id="sim">
-                        <label class="emlinha" for="sim">Sim</label>
-                        <input class="emlinha" type="radio" name="time" id="nao">
-                        <label class="emlinha" for="nao">Não</label>
-                    </div>
-                </div>
-
-                <div class="espacinho">
-                    <label for="nome_time">Nome do time:</label>
-                    <input type="text" name="" id="nome_time" required autofocus>
-                </div>
-
-                <div class="espacinho">
-                    <label>Pagou a AAPM?</label>
-                    <input class="emlinha" type="radio" name="timee" id="simm">
-                    <label class="emlinha" for="simm">Sim</label>
-                    <input class="emlinha" type="radio" name="timee" id="naoo">
-                    <label class="emlinha" for="naoo">Não</label>
-                </div>
-
-                <div class="espacinho">
-                    <label for="informacoes">Comentários adicionais:</label>
-                    <textarea name="informacoes" id="informacoes" rows="8" cols="54" maxlength="200"></textarea>
-                </div>
-
-
-                <input type="submit" name="enviar" value="ENVIAR" id="enviar">
-                <input type="reset" name="resetar" value="REDEFINIR" id="resetar">
-            </form>
-        <div class="grid-aapm" id="ancora-aapm">
+            </div>
+            <div id="espaco_time">
+    
+            </div>
+            <div class="espacinho">
+                <label>Pagou a AAPM?</label>
+                <input class="emlinha" type="radio" name="timee" id="simm">
+                <label class="emlinha" for="simm">Sim</label>
+                <input class="emlinha" type="radio" name="timee" id="naoo">
+                <label class="emlinha" for="naoo">Não</label>
+            </div>
+            <div class="espacinho">
+                <label for="informacoes">Comentários adicionais:</label>
+                <textarea name="informacoes" id="informacoes" rows="8" cols="54" maxlength="200"></textarea>
+            </div>
+            <input type="submit" name="enviar" value="ENVIAR" id="enviar">
+            <input type="reset" name="resetar" value="REDEFINIR" id="resetar">
+        </form>
+        <div class="ancora-size" id="ancora-aapm"></div>
+        <div class="grid-aapm">
             <div class="info-aapm">
                 <h2>AAPM</h2>
                 <h4>Confira as vantagens do patrocínio da organização à escola.</h4>
@@ -370,7 +364,7 @@
                 <h5 id="descricao-beneficio">Descontrair com uma partida de ping-pong!</h5>
             </div>
         </div>
-        <a class="voltar" href="#ancora-inicio">Voltar ao topo</a>
+        <a class="voltar" href="">Voltar ao topo</a>
     </main>
     <footer>
         <div class="github">
@@ -402,6 +396,22 @@
         // Enviar formulário sem recarregar a página
         document.getElementById('enviar').addEventListener('click', criarInscricao);
     });
+    function sim_time(tem_time) {
+        const espaco = document.getElementById('espaco_time');
+        if (tem_time == 1) {
+            const div = document.createElement('div');
+            div.className = "espacinho"
+            div.id = "cria_time";
+            div.innerHTML = `
+                <label for="nome_time">Nome do time:</label>
+                <input type="text" name="" id="nome_time" required>
+            `;
+            espaco.appendChild(div);
+        } else {
+            const div = document.getElementById('cria_time');
+            div.remove();
+        }
+    }
     async function criarInscricao(event) {
         event.preventDefault();
 
