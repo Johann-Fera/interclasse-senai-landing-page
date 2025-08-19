@@ -36,6 +36,13 @@
             color: white;
             margin: 0;
         }
+        .a_h3{
+            font-size: 2vh;
+            font-weight: 600;
+            color: white;
+            margin: 0;
+            text-decoration: none;
+        }
         html{
             font-family: 'inter', sans-serif;
         }
@@ -159,7 +166,6 @@
         .taxa{
             display: grid;
             grid-template-columns: 1fr 1fr;
-            justify-items: center;
             padding: 5vh;
             padding-left: 12vh;
             padding-right: 12vh;
@@ -325,7 +331,7 @@
         </div>
         <div class="taxa">
             <h4 class="taxa2">Taxa de R$25.00 para não associados à AAPM, por modalidade.</h4>
-            <h4 class="taxa2">Sem taxa para associados!</h4>
+            <h4 class="taxa2" style="justify-self: right;">Sem taxa para associados!</h4>
             <h4 class="taxa2">Se interessou? Inscreva-se já!</h4>
         </div>
         <div class="ancora-size" id="ancora-inscricao"></div>
@@ -392,10 +398,10 @@
         <div class="ancora-size" id="ancora-aapm"></div>
         <div class="grid-aapm">
             <div class="info-aapm">
-                <h2 style="padding-bottom: 3vh;">AAPM</h2>
+                <h2 style="padding-bottom: 4vh;">AAPM</h2>
                 <h4>Confira as vantagens do patrocínio da organização à escola.</h4>
                 <h4>Junte-se à AAPM e desfrute dos seus benefícios!</h4>
-                <h4 style="font-style: italic;">Acesso ao Wi-fi e video-games; Passeios culturais bimestrais; Sorteios e brindes; Descontos na cantina; E mais!</h4>
+                <h4 style="font-style: italic; padding-top: 5vh;">Acesso ao Wi-fi e video-games; Passeios culturais bimestrais; Sorteios e brindes; Descontos na cantina; E mais!</h4>
             </div>
             <div class="beneficios">
                 <div class="beneficios-img" id="foto-beneficio">
@@ -404,28 +410,38 @@
                     <div class="beneficios-botao" onclick="troca_beneficio(3)" id="bt3"></div>
                     <div class="beneficios-botao" onclick="troca_beneficio(4)" id="bt4"></div>
                 </div>
-                <h5 id="descricao-beneficio">Descontrair com uma partida de ping-pong!</h5>
+                <h5 id="descricao-beneficio" style="padding-left: 5vh;">Descontrair com uma partida de ping-pong!</h5>
             </div>
         </div>
         <a class="voltar" href="">Voltar ao topo</a>
     </main>
     <footer>
+
         <div class="github">
-            <img src="imagens/git icone.png" alt="github logo" class="footer-icone">
-            <h3>Johann Andrade</h3>
-            <img src="imagens/git icone.png" alt="github logo" class="footer-icone">
-            <h3>Nicolle Rocha</h3>
+            <div class="github_div">
+                <img src="imagens/git icone.png" alt="github logo" class="footer-icone">
+                <a class="a_h3" href="https://github.com/Johann-Fera">Johann Andrade</a>
+                <img src="imagens/git icone.png" alt="github logo" class="footer-icone">
+                <a class="a_h3" href="https://github.com/Nickddb">Nicolle Rocha</a>
+            </div>
         </div>
+
         <div class="contato">
-            <h3>Praça Roberto Mange, R. Santa Rosália, 30, Sorocaba - SP, 18090-110</h3>
-            <h3>(15) 3212-7400</h3>
+            <div class="contato_div">
+                <a class="a_h3" href="https://www.google.com/maps/dir/SENAI+Gaspar+Ricardo+J%C3%BAnior,+Pra%C3%A7a+Roberto+Mange,+R.+Santa+Ros%C3%A1lia,+30,+Sorocaba+-+SP,+18090-110//@-23.4866283,-47.4904281,13z/data=!4m8!4m7!1m5!1m1!1s0x94c58a9f61b55945:0x4ead928c70b1e690!2m2!1d-47.4492286!2d-23.4867123!1m0?entry=ttu&g_ep=EgoyMDI1MDgxMy4wIKXMDSoASAFQAw%3D%3D">Praça Roberto Mange, R. Santa Rosália, 30, Sorocaba - SP, 18090-110</a>
+                <a class="a_h3" href="https://sp.senai.br/unidade/sorocaba/">(15) 3212-7400</a>
+            </div>
         </div>
+
         <div class="media">
-            <img src="imagens/insta icone.png" alt="instagram logo" class="footer-icone">
-            <h3>SENAI sorocaba</h3>
-            <img src="imagens/face icone.png" alt="facebook logo" class="footer-icone">
-            <h3>Senai Sorocaba - Santa Rosália</h3>
+            <div class="media_div">
+                <img src="imagens/insta icone.png" alt="instagram logo" class="footer-icone">
+                <a class="a_h3" href="https://www.instagram.com/senaisorocaba/">SENAI sorocaba</a>
+                <img src="imagens/face icone.png" alt="facebook logo" class="footer-icone">
+                <a class="a_h3" href="https://www.facebook.com/senaisp.sorocabarosalia/">Senai Sorocaba - Santa Rosália</a>
+            </div>
         </div>
+
     </footer>
 </body>
 <script>
